@@ -200,7 +200,7 @@
 
 /* Fluid type — clamp() not in Tailwind CDN */
 .hero-h1 {
-  font-size: clamp(68px, 10.5vw, 152px);
+  font-size: clamp(68px, 10.5vw, 130px);
 }
 
 .work-h2 {

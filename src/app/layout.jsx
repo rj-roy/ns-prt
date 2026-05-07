@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       className={`h-full ${fraunces.variable} ${cabinet.variable}`}
     >
       <body className="bg-parchment text-ink font-sans font-normal overflow-x-hidden cursor-none">
-        <CustomCursor/>
+        <CustomCursor />
         {/* <HoverPreview/> */}
         <NavBar />
         <main className="flex-1">
