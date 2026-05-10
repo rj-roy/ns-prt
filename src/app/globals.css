@@ -1,12 +1,16 @@
 @import "tailwindcss";
 @import "@heroui/styles"; 
 
+*{
+  cursor: none;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #0a0a0a;
+  --foreground: #1b1b1f;
 }
 
 .dark {
   --background: #0a0a0a;
-  --foreground: #ededed;
+  --foreground: #1b1b1f;
 }
