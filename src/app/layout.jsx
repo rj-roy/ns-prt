@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
       className={`h-full ${fraunces.variable} ${cabinet.variable}`}
     >
-      <body className="font-sans font-normal overflow-x-hidden cursor-none bg-white dark:bg-background">
+      <body className="font-sans font-normal overflow-x-hidden cursor-none bg-d-white dark:bg-dark">
         <CustomCursor />
         <Provider>
             {children}          

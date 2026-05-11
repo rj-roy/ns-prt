@@ -5,12 +5,19 @@
   cursor: none;
 }
 
+@theme{
+  --color-primary: #31e58d;
+  --color-dark: #1f1f1f;
+  --color-black: #1b1b1f;
+  --color-d-white: #f1edec;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #1b1b1f;
+  --background: #f1edec;
+  --foreground: #1f1f1f;
 }
 
 .dark {
-  --background: ##1f1f1f;
+  --background: #1f1f1f;
   --foreground: #1b1b1f;
 }

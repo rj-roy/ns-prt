@@ -35,7 +35,7 @@ const NavHeader = () => {
         <div>
             <button
                 onClick={() => setMenuOpen(true)}
-                className="fixed right-18 top-15 p-2 bg-white dark:bg-black text-black dark:text-white hover:text-amber-400 transition focus:outline-none focus:ring-2 focus:ring-amber-400/50 z-9 ring rounded-full"
+                className="fixed right-18 top-15 p-2 bg-white dark:bg-dark text-black dark:text-white hover:text-amber-400 transition focus:outline-none focus:ring-2 focus:ring-amber-400/50 z-9 ring rounded-full"
                 aria-label="Open menu"
                 aria-expanded={menuOpen}
                 aria-controls="mobile-menu"
@@ -56,7 +56,7 @@ const NavHeader = () => {
 
             <div
                 onClick={closeMenu}
-                className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 
+                className={`fixed inset-0 dark:bg-black/50 z-40 transition-opacity duration-300 
                 ${menuOpen
                         ? "opacity-100 visible"
                         : "opacity-0 invisible"
@@ -65,13 +65,13 @@ const NavHeader = () => {
 
             <div
                 id="mobile-menu"
-                className={`fixed top-0 right-0 z-50 w-[320px] min-h-screen bg-[#0f0f11] text-zinc-400 px-10 py-14 flex flex-col justify-between transform transition-transform duration-300 
+                className={`fixed top-0 right-0 z-50 w-[320px] min-h-screen bg-white dark:bg-[#0f0f11] dark:text-zinc-400 px-10 py-14 flex flex-col justify-between transform transition-transform duration-300 
                 ${menuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <div>
                     <div className="flex items-center justify-between mb-14">
-                        <h2 className="text-3xl font-light text-zinc-300">
+                        <h2 className="text-3xl font-light text-gray-700 dark:text-zinc-300">
                             Menu
                         </h2>
 
@@ -90,7 +90,7 @@ const NavHeader = () => {
                                 href={menu.href}
                                 key={index}
                                 onClick={closeMenu}
-                                className="flex items-center gap-4 hover:text-white transition duration-300"
+                                className="flex items-center gap-4 dark:hover:text-white transition duration-300"
                             >
                                 <menu.icon size={20} />
 

@@ -3,8 +3,8 @@ import RJR from "@/assets/images/roy-ji.png"
 
 const LeftAbout = () => {
     return (
-        <div className="w-full lg:w-130 lg:flex lg:justify-center lg:items-center  2xl:fixed top-30 bottom-30 left-20 px-2 py-5">
-            <div className="rounded-[32px] border border-zinc-700 bg-[#1b1b1f] p-8 text-white">
+        <div className="w-full lg:w-130 lg:flex lg:justify-center lg:items-center xl:fixed top-30 bottom-30 left-8 px-2 py-5">
+            <div className="rounded-[32px] border border-zinc-700 bg-d-white dark:bg-background p-8">
                 <div className="flex items-start justify-between">
                     <div className="flex items-center gap-2">
                         <h1 className="text-4xl font-semibold">RJ Roy</h1>
@@ -14,7 +14,7 @@ const LeftAbout = () => {
                         </span>
                     </div>
 
-                    <p className="text-right text-lg leading-8 text-zinc-200">
+                    <p className="text-right text-lg leading-8 text-gray-700 dark:text-zinc-200">
                         Full Stack Developer
                     </p>
                 </div>
@@ -48,18 +48,16 @@ const LeftAbout = () => {
                         <button
                             key={item}
                             className=" h-13 w-13 rounded-full border border-zinc-600 text-sm text-zinc-300  transition hover:border-white hover:text-white ">
-                            {item}
-                            
+                                                                
                         </button>
                         
                     ))}
                 </div>
 
-                {/* Button */}
-                <button
-                    className="mt-10 flex w-full items-center justify-center gap-3 rounded-full bg-[#31e58d] py-5 text-xl font-medium text-black transition hover:opacity-90" >
+                <a href="/contact"
+                    className="mt-10 flex w-full items-center justify-center gap-3 rounded-full bg-linear-to-l from-primary to-[#0d6137] text-white py-5 text-xl font-medium transition hover:opacity-90" >
                     ✉ HIRE ME!
-                </button>
+                </a>
             </div>
         </div>
     );
