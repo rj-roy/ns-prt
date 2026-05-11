@@ -1,4 +1,4 @@
-import HomeNav from "@/components/header/HomeNav";
+import HomeNav from "@/components/header/nav/HomeNav";
 import HeroSec from "@/components/home/HeroSec";
 import Projects from "@/components/home/Projects";
 

@@ -3,8 +3,8 @@ import RJR from "@/assets/images/roy-ji.png"
 
 const LeftAbout = () => {
     return (
-        <div className="flex items-center justify-center fixed top-40 bottom-40 left-20 px-2">
-            <div className="w-130 rounded-[32px] border border-zinc-700 bg-[#1b1b1f] p-8 text-white">
+        <div className="w-full lg:w-130 lg:flex lg:justify-center lg:items-center  2xl:fixed top-30 bottom-30 left-20 px-2 py-5">
+            <div className="rounded-[32px] border border-zinc-700 bg-[#1b1b1f] p-8 text-white">
                 <div className="flex items-start justify-between">
                     <div className="flex items-center gap-2">
                         <h1 className="text-4xl font-semibold">RJ Roy</h1>

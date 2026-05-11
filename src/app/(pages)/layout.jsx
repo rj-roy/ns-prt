@@ -1,4 +1,4 @@
-import AllPagesNav from "@/components/header/AllPagesNav";
+import AllPagesNav from "@/components/header/nav/AllPagesNav";
 
 export default function AllPagesLayout ({children}) {
     return (
