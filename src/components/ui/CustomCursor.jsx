@@ -52,7 +52,7 @@ const CustomCursor = () => {
         rounded-full mix-blend-difference
         transition-all duration-200 ease-out
         ${isHovering 
-          ? 'w-15 h-15 bg-white/90 border-2 border-black -mt-6 -ml-6'
+          ? 'w-20 h-20 bg-white/90 border-2 border-black -mt-6 -ml-6'
           : 'w-3 h-3 bg-[#00bdf7]'                               
         }`}
       style={{ 

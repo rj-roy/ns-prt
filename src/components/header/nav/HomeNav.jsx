@@ -1,8 +1,12 @@
 'use client'
+import { div } from "framer-motion/client";
 import { Briefcase, GanttChart, GripVertical, House, Mail, MessageSquareText, Shapes, User } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const HomeNav = () => {
+    const [menuOpen, setMenuOpen] = useState(true);
     const links = [
         { name: "Home", href: "#home", icon: House },
         { name: "About", href: "#about", icon: User },
@@ -25,13 +29,26 @@ const HomeNav = () => {
             </span>
         </Link>
     ));
-    return (
-        <div className="border hidden xl:grid h-120 w-10 p-8 rounded-full mx-auto place-content-center cursor-none fixed right-8 top-40 bottom-40">
-            <nav className="flex flex-col gap-5">
-                {renderedLinks}
-            </nav>
-        </div>
-    );
+    return <>
+        {
+            menuOpen ? (
+                <div className="border hidden lg:grid h-120 w-10 p-8 rounded-full mx-auto place-content-center cursor-none fixed right-8 top-50 bottom-50 transition-all duration-700">
+                    <nav className="relative flex flex-col gap-5">
+                        {renderedLinks}
+                    </nav>
+                    <div onClick={()=>setMenuOpen(false)} className="z-9999 absolute top-50 bottom-50 -left-3 border-l border-l-gray-500 bg-[#F1EDEC] dark:bg-[#1F1F1F] h-7 w-5 rounded-full flex items-center justify-center cursor-pointer">
+                        <FaAngleRight size={15} className=""/>
+                    </div>
+                </div>
+            ): (
+                <div onClick={()=>setMenuOpen(true)} className="fixed right-0 top-100 bottom-100 bg-black/20 dark:bg-white/20 h-12 w-8 rounded-full flex items-center justify-center cursor-pointer transition-all duration-700">
+                    <FaAngleLeft size={30} className="text-primary"/>
+                </div>
+            )
+        }
+    </>
+
+
 };
 
 export default HomeNav;

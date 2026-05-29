@@ -1,12 +1,9 @@
 'use client';
-
 import { motion } from 'framer-motion';
-import { ArrowRight, Sun, Moon } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
 
 const HeroSec = () => {
-    const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
     // Prevent hydration mismatch by only rendering theme-dependent UI after mount
@@ -48,7 +45,7 @@ const HeroSec = () => {
     };
 
     return (
-        <section className="relative w-full min-h-screen  flex items-center justify-center px-4 sm:px-6 lg:px-8 lg:pl-0 overflow-x-hidden transition-colors duration-500">
+        <section className="relative w-full min-h-screen  flex items-center justify-center px-4 sm:px-6 lg:px-8 lg:pl-0 transition-colors duration-500">
 
 
             <div className='w-full max-w-3xl md:max-w-5xl mx-auto'>

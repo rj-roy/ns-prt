@@ -1,0 +1,36 @@
+export async function GET() {
+  const projects = [
+    {
+      id: 1,
+      title: 'Majd',
+      description: 'Free Portfolio Template',
+      image: '/images/majd-portfolio.jpg',
+      tags: ['React', 'Next.js', 'Tailwind'],
+      liveUrl: 'https://example.com/majd',
+      githubUrl: 'https://github.com/example/majd',
+      featured: false,
+    },
+    {
+      id: 2,
+      title: 'E-Commerce Platform',
+      description: 'Full-stack shopping experience',
+      image: '/images/ecommerce.jpg',
+      tags: ['Node.js', 'MongoDB', 'React'],
+      liveUrl: 'https://example.com/ecommerce',
+      githubUrl: 'https://github.com/example/ecommerce',
+      featured: false,
+    },
+    {
+      id: 3,
+      title: 'Task Manager',
+      description: 'Productivity application',
+      image: '/images/taskmanager.jpg',
+      tags: ['TypeScript', 'Redux', 'Firebase'],
+      liveUrl: 'https://example.com/taskmanager',
+      githubUrl: 'https://github.com/example/taskmanager',
+      featured: false,
+    },
+  ];
+
+  return Response.json(projects);
+}

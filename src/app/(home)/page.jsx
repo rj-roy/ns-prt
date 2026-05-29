@@ -6,7 +6,6 @@ export default function Home() {
     <div className="w-full overflow-x-hidden">
       <div className="w-full">
         <HeroSec />
-        <HeroSec />
         <Projects />
       </div>
     </div>

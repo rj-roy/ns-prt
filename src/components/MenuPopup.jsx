@@ -59,7 +59,7 @@ const MenuPopup = ({ isOpen, onClose }) => {
         <>
             <div
                 onClick={onClose}
-                className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition-opacity"
+                className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition-all duration-700"
             />
             <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 px-4">
                 <div className="bg-white dark:bg-[#1a1a1e] rounded-xl shadow-2xl w-full max-w-2xl max-h-[80vh] overflow-hidden flex flex-col">
