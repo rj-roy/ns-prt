@@ -26,7 +26,7 @@ const HomeNav = () => {
         </Link>
     ));
     return (
-        <div className="border hidden xl:grid h-120 w-10 p-8 rounded-full mx-auto place-content-center cursor-none fixed right-15 top-40 bottom-40">
+        <div className="border hidden xl:grid h-120 w-10 p-8 rounded-full mx-auto place-content-center cursor-none fixed right-8 top-40 bottom-40">
             <nav className="flex flex-col gap-5">
                 {renderedLinks}
             </nav>

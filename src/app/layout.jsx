@@ -6,6 +6,7 @@ import Provider from "@/components/Provider";
 export const metadata = {
   title: "Rj Roy",
   description: "Next.js Frontend Developer",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
 };
 
 export default function RootLayout({ children }) {
