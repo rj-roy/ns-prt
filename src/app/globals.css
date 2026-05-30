@@ -23,15 +23,15 @@ body {
   --color-primary: #31e58d;
   --color-dark: #1f1f1f;
   --color-black: #1b1b1f;
-  --color-d-white: #f1edec;
+  --color-d-white: #eef0ee;
 }
 
 :root {
-  --background: #f1edec;
+  --background: #eef0ee;
   --foreground: #1f1f1f;
 }
 
 .dark {
   --background: #1f1f1f;
-  --foreground: #1b1b1f;
+  --foreground: #eef0ee;
 }

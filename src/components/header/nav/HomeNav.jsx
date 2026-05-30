@@ -1,5 +1,4 @@
 'use client'
-import { div } from "framer-motion/client";
 import { Briefcase, GanttChart, GripVertical, House, Mail, MessageSquareText, Shapes, User } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -32,7 +31,7 @@ const HomeNav = () => {
     return <>
         {
             menuOpen ? (
-                <div className="border hidden lg:grid h-120 w-10 p-8 rounded-full mx-auto place-content-center cursor-none fixed right-8 top-50 bottom-50 transition-all duration-700">
+                <div className="border hidden bg-[#dadbda] dark:bg-black lg:grid h-120 w-10 p-8 rounded-full mx-auto place-content-center cursor-none fixed right-8 top-50 bottom-50 transition-all duration-700">
                     <nav className="relative flex flex-col gap-5">
                         {renderedLinks}
                     </nav>

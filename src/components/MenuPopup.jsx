@@ -11,14 +11,14 @@ const MenuPopup = ({ isOpen, onClose }) => {
         { name: 'Projects', icon: Layers, description: 'View my work', href: '#projects' }
     ];
     const pages = [
-        { name: 'Home', icon: Home, description: 'Overview & entry point', href: '#home' },
-        { name: 'About', icon: User, description: 'Who I am & what I do', href: '#about' },
-        { name: 'Book a Call', icon: MessageSquare, description: 'Schedule a quick chat', href: '#contact' },
-        { name: 'Contact', icon: Mail, description: 'Reach out directly', href: '#contact' },
-        { name: 'Experience', icon: Briefcase, description: 'Work & internships', href: '#resume' },
-        { name: 'Skills', icon: Zap, description: 'Technologies & expertise', href: '#skills' },
-        { name: 'Projects', icon: Code, description: 'Portfolio projects', href: '#projects' },
-        { name: 'Services', icon: Layers, description: 'What I offer', href: '#services' },
+        { name: 'Home', icon: Home, description: 'Overview & entry point', href: '/' },
+        { name: 'About', icon: User, description: 'Who I am & what I do', href: '/#about' },
+        { name: 'Book a Call', icon: MessageSquare, description: 'Schedule a quick chat', href: '/#contact' },
+        { name: 'Contact', icon: Mail, description: 'Reach out directly', href: '/#contact' },
+        { name: 'Experience', icon: Briefcase, description: 'Work & internships', href: '/#resume' },
+        { name: 'Skills', icon: Zap, description: 'Technologies & expertise', href: '/#skills' },
+        { name: 'Projects', icon: Code, description: 'Portfolio projects', href: '/projects' },
+        { name: 'Services', icon: Layers, description: 'What I offer', href: '/#services' },
     ];
 
     useEffect(() => {
@@ -130,7 +130,7 @@ const MenuPopup = ({ isOpen, onClose }) => {
                                             onClick={() => handleNavigate(page.href)}
                                             className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-zinc-800 transition cursor-pointer group"
                                         >
-                                            <div className="mt-1 p-2 bg-gray-100 dark:bg-zinc-700 rounded-lg group-hover:bg-amber-400/20 transition flex-shrink-0">
+                                            <div className="mt-1 p-2 bg-gray-100 dark:bg-zinc-700 rounded-lg group-hover:bg-amber-400/20 transition shrink-0">
                                                 <page.icon size={18} className="text-gray-700 dark:text-gray-300" />
                                             </div>
                                             <div className="flex-1 min-w-0">

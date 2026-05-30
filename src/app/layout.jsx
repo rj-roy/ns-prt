@@ -2,6 +2,7 @@ import "./globals.css";
 import { cabinet, fraunces } from "./fonts/styles/FontStyle";
 import CustomCursor from "@/components/ui/CustomCursor";
 import Provider from "@/components/Provider";
+import BackToTop from "@/components/ui/BackToTop";
 
 export const metadata = {
   title: "Rj Roy",
@@ -19,7 +20,10 @@ export default function RootLayout({ children }) {
       <body className="font-sans font-normal overflow-x-hidden cursor-none bg-d-white dark:bg-dark">
         <CustomCursor />
         <Provider>
-            {children}          
+            {children}
+            <div>
+              <BackToTop/>
+            </div>
         </Provider>
       </body>
     </html>

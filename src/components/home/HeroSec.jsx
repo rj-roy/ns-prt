@@ -148,23 +148,25 @@ const HeroSec = () => {
                             <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5 transition-transform group-hover:translate-x-1" />
                         </motion.button>
                     </motion.div>
-                </motion.div>
-
-                {/* Scroll Indicator */}
-                <motion.div
-                    className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={mounted ? { opacity: 1, y: 0 } : {}}
-                    transition={{ delay: 1.5, duration: 0.5 }}
-                >
+                    
+                    {/* Scroll Indicator */}
                     <motion.div
-                        animate={{ y: [0, 10, 0] }}
-                        transition={{ duration: 1.5, repeat: Infinity }}
-                        className="w-6 h-10 border-2 dark:border-neutral-600 border-neutral-400 rounded-full flex justify-center pt-2"
+                        className="flex items-center justify-center mt-20"
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={mounted ? { opacity: 1, y: 0 } : {}}
+                        transition={{ delay: 1.5, duration: 0.5 }}
                     >
-                        <motion.div className="w-1 h-2 dark:bg-neutral-400 bg-neutral-500 rounded-full" />
+                        <motion.div
+                            animate={{ y: [0, 10, 0] }}
+                            transition={{ duration: 1.5, repeat: Infinity }}
+                            className="w-6 h-10 border-2 dark:border-neutral-600 border-neutral-400 rounded-full flex justify-center pt-2"
+                        >
+                            <motion.div className="w-1 h-2 dark:bg-neutral-400 bg-neutral-500 rounded-full" />
+                        </motion.div>
                     </motion.div>
                 </motion.div>
+
+
             </div>
         </section>
     );

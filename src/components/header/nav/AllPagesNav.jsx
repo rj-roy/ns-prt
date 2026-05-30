@@ -1,75 +1,34 @@
-'use client'
-import { useState } from "react";
+import { Briefcase, GanttChart, GripVertical, House, Mail, MessageSquareText, Shapes, User } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import ThemeToggle from "../../ui/ThemeToggle";
-import MenuPopup from "../../MenuPopup";
 
 const AllPagesNav = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-    const pathname = usePathname();
     const links = [
-        { name: "Work", href: "/projects" },
-        { name: "About", href: "/about" },
-        { name: "Services", href: "/services" },
-        { name: "Contact", href: "/contact" },
+        { name: "Home", href: "/#home", icon: House },
+        { name: "About", href: "/#about", icon: User },
+        { name: "Resume", href: "/#resume", icon: Briefcase },
+        { name: "Services", href: "/#services", icon: GanttChart },
+        { name: "Skills", href: "/#skills", icon: Shapes },
+        { name: "Projects", href: "/projects", icon: GripVertical },
+        { name: "Testimonials", href: "/#testimonials", icon: MessageSquareText },
+        { name: "Contact", href: "/#contact", icon: Mail },
     ];
 
     const renderedLinks = links.map((link) => (
         <Link key={link.name} href={link.href}
-            className={`z-9999 nav-link text-[12px] font-medium tracking-widest uppercase text-mid no-underline hover:text-ink transition-colors duration-200
-            ${pathname === link.href ? 'text-red underline underline-offset-4 font-bold!' : ''}`}>
-            {link.name}
+            className={`group cursor-none relative`}>
+            <link.icon strokeWidth={1.2} />
+            <span className="absolute top-1 -translate-x-6 opacity-0 w-auto group-hover:opacity-100 group-hover:translate-y-10 bg-gray-600 px-2 py-1 rounded text-white transition-all duration-350 text-center pointer-events-none">
+                {link.name}
+            </span>
         </Link>
     ));
-
     return (
-        <>
-            <nav className="px-4 sm:px-6 md:px-12 py-7 flex justify-between items-center relative z-40">
-                <div className="flex justify-center items-center">
-                    <Link href='/' className="font-serif text-lg font-bold italic text-ink dark:text-parchment no-underline tracking-snug">Rj Roy.</Link>
-                </div>
-                
-                {/* Desktop Navigation */}
-                <div className="hidden md:flex items-center gap-9">
-                    {renderedLinks}
-                    <div className="hidden lg:flex items-center gap-1.75 text-[12px] text-mid">
-                        <div className="w-1.75 h-1.75 rounded-full bg-green-500 animate-pulse-dot"></div>
-                        Available now
-                    </div>
-                    <ThemeToggle className=""/>
-                </div>
-
-                {/* Mobile Menu Button */}
-                <div className="md:hidden flex items-center gap-3">
-                    <ThemeToggle />
-                    <button
-                        onClick={() => setMenuOpen(true)}
-                        className="p-2 hover:text-amber-400 transition focus:outline-none focus:ring-2 focus:ring-amber-400/50 rounded-full"
-                        aria-label="Open menu"
-                        aria-expanded={menuOpen}
-                        aria-controls="mobile-menu"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-6 h-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                            />
-                        </svg>
-                    </button>
-                </div>
+        <div className="border hidden bg-[#dadbda]/60 dark:bg-black/60 lg:flex w-120 h-10 p-8 rounded-full mx-auto justify-center items-center cursor-none fixed right-100 left-100 top-5 transition-all duration-700">
+            <nav className="relative flex  gap-5">
+                {renderedLinks}
             </nav>
-            <MenuPopup isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-        </>
-    );
+        </div>
+    )
 };
 
 export default AllPagesNav;
