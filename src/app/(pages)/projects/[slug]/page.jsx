@@ -27,8 +27,8 @@ const ProjectsDetails = async ({ params }) => {
 
                 {/* About Section */}
                 <section className="space-y-5 my-10 mb-20">
-                    <h2 className="text-2xl font-bold text-black dark:text-white">Medi Queue</h2>
-                    <p className="text-[#2e2f2e] dark:text-[#c8d0c9] leading-relaxed max-w-4xl">
+                    <h2 className="text-2xl font-bold text-black dark:text-white">{filtered.title}</h2>
+                    <p className="text-[#2e2f2e] dark:text-[#c8d0c9] leading-relaxed w-full">
                         {filtered.projectDetails}
                     </p>
                 </section>
@@ -36,7 +36,7 @@ const ProjectsDetails = async ({ params }) => {
                 {/* Hero Section */}
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-5">
                     {/* Left Content */}
-                    <div className="space-y-2  p-5 rounded-2xl shadow-xs shadow-primary bg-primary/2">
+                    <div className="space-y-2  p-10 rounded-2xl shadow-xs shadow-primary bg-primary/2 grid place-content-center">
                         {/* Meta Info */}
                         <div className="flex items-center gap-3 text-sm text-gray-500 dark:text-neutral-400">
                             <span className="px-3 py-1 rounded-full bg-d-white dark:bg-neutral-800 border border-neutral-700">
@@ -78,7 +78,7 @@ const ProjectsDetails = async ({ params }) => {
                     </div>
 
                     {/* Technologies */}
-                    <div className="p-5 rounded-2xl shadow-xs shadow-primary bg-primary/2">
+                    <div className="p-10 rounded-2xl shadow-xs shadow-primary bg-primary/2">
                         <h2 className="text-2xl font-bold text-black dark:text-white mb-6">Technologies</h2>
                         <TechnologyGrid technologies={filtered?.technologies} />
                     </div>

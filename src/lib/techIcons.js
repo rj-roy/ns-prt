@@ -11,12 +11,14 @@ import {
   SiPython,
   SiJavascript,
   SiExpress,
-  SiVercel
+  SiVercel,
+  SiBetterauth,
+  SiJsonwebtokens,
+  SiNetlify
 } from "react-icons/si";
 import { FaCcStripe, FaGitAlt } from "react-icons/fa";
 import { SiShadcnui } from "react-icons/si";
 
-// Icon mapping for technologies
 export const techIconMap = {
   TypeScript: SiTypescript,
   MongoDB: SiMongodb,
@@ -35,10 +37,12 @@ export const techIconMap = {
   "shadcn/ui": SiShadcnui,
   Cloudinary: SiNextdotjs, 
   Recharts: SiReact, 
-  JWT: SiJavascript, 
+  JWT: SiJsonwebtokens, 
   Vercel: SiVercel,
+  BetterAuth: SiBetterauth,
+  Netlify: SiNetlify,
 };
 
 export const getTechIcon = (techName) => {
-  return techIconMap[techName] || SiReact; // Default to React icon if not found
+  return techIconMap[techName] || SiReact; 
 };
