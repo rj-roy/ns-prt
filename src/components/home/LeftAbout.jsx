@@ -28,6 +28,7 @@ const LeftAbout = () => {
                         alt='jibon_roy'
                         width={500}
                         height={500}
+                        loading="eager"
                         className="w-90 object-cover grayscale"
                     />
                 </div>

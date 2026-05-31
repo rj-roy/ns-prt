@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const HeroSec = () => {
@@ -45,7 +46,7 @@ const HeroSec = () => {
     };
 
     return (
-        <section className="relative w-full min-h-screen  flex items-center justify-center px-4 sm:px-6 lg:px-8 lg:pl-0 transition-colors duration-500">
+        <section className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 lg:pl-0 transition-colors duration-500">
 
 
             <div className='w-full max-w-3xl md:max-w-5xl mx-auto'>
@@ -65,7 +66,7 @@ const HeroSec = () => {
                 />
 
                 <motion.div
-                    className="relative max-w-5xl mx-auto text-center z-10"
+                    className="relative max-w-5xl mx-auto z-10 text-left"
                     variants={containerVariants}
                     initial="hidden"
                     animate={mounted ? 'visible' : 'hidden'}
@@ -90,14 +91,18 @@ const HeroSec = () => {
                     </motion.h1>
 
                     {/* Subtitle */}
-                    <motion.p
-                        variants={itemVariants}
-                        className="text-base sm:text-lg md:text-xl dark:text-neutral-400 text-neutral-600 max-w-2xl mx-auto mb-12 leading-relaxed"
-                    >
-                        Passionate about creating intuitive and engaging user experiences.
-                        <br className="hidden sm:block" />
-                        Specialize in transforming ideas into beautifully crafted products.
-                    </motion.p>
+                    <div className="flex justify-start items-start w-full">
+                        <motion.p
+                            variants={itemVariants}
+                            initial="hidden"
+                            animate="visible"
+                            className="text-base text-left sm:text-lg md:text-xl dark:text-neutral-400 text-neutral-600 max-w-2xl mb-12 leading-relaxed"
+                        >
+                            Passionate about creating intuitive and engaging user experiences.
+                            <br className="hidden sm:block" />
+                            Specialize in transforming ideas into beautifully crafted products.
+                        </motion.p>
+                    </div>
 
                     {/* Stats Grid */}
                     <motion.div
@@ -108,7 +113,7 @@ const HeroSec = () => {
                             <motion.div
                                 key={index}
                                 variants={statVariants}
-                                className="flex flex-col items-center"
+                                className="flex flex-col items-start"
                             >
                                 <motion.span
                                     className="text-4xl sm:text-5xl md:text-6xl font-bold dark:text-white text-neutral-900 mb-2"
@@ -127,28 +132,30 @@ const HeroSec = () => {
                     {/* CTA Buttons */}
                     <motion.div
                         variants={itemVariants}
-                        className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full px-2"
+                        className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-start items-center w-full px-2"
                     >
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg transition-colors duration-300 shadow-lg shadow-primary/25"
-                            onClick={() => console.log("Let's Talk clicked")}
                         >
-                            Let&apos;s Talk
+                            <Link href={'#contact'}>
+                                Let&apos;s Talk
+                            </Link>
                         </motion.button>
 
                         <motion.button
                             whileHover={{ scale: 1.05, x: 5 }}
                             whileTap={{ scale: 0.95 }}
-                            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base bg-transparent dark:border-neutral-700 border-neutral-300 hover:border-primary dark:text-white text-neutral-800 font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group"
-                            onClick={() => console.log('My Work clicked')}
+                            className="w-full sm:w-auto  text-sm sm:text-base bg-transparent dark:border-neutral-700 border-neutral-300 hover:border-primary dark:text-white text-neutral-800 font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group"
                         >
-                            My Work
+                            <Link href={'#projects'} className='px-6 sm:px-8 py-3 sm:py-4'>
+                                My Work
+                            </Link>
                             <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5 transition-transform group-hover:translate-x-1" />
                         </motion.button>
                     </motion.div>
-                    
+
                     {/* Scroll Indicator */}
                     <motion.div
                         className="flex items-center justify-center mt-20"

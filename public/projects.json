@@ -5,6 +5,7 @@
     "description": "Free Portfolio Template",
     "image": "/images/majd-portfolio.jpg",
     "tags": ["React", "Next.js", "Tailwind"],
+    "technologies": ["TypeScript", "React", "Next.js", "Tailwind", "shadcn/ui", "Recharts", "Git", "Firebase"],
     "liveUrl": "https://example.com/majd",
     "githubUrl": "https://github.com/example/majd",
     "featured": true
@@ -15,9 +16,19 @@
     "description": "Full-stack shopping experience",
     "image": "/images/ecommerce.jpg",
     "tags": ["Node.js", "MongoDB", "React"],
+    "technologies": ["TypeScript", "React", "Node.js", "MongoDB", "Express", "Razorpay", "Tailwind", "Redux"],
     "liveUrl": "https://example.com/ecommerce",
     "githubUrl": "https://github.com/example/ecommerce",
-    "featured": false
+    "featured": false,
+    "stack": "Full Stack",
+    "projectDetails": "A complete e-commerce solution with product catalog, shopping cart, payment integration, and order management. Built with modern web technologies for scalability.",
+    "keyFeatures": [
+      "Product filtering and search functionality",
+      "Secure payment processing with Razorpay",
+      "User authentication and profile management",
+      "Order tracking system",
+      "Admin dashboard for inventory management"
+    ]
   },
   {
     "id": 3,
@@ -25,8 +36,18 @@
     "description": "Productivity application",
     "image": "/images/taskmanager.jpg",
     "tags": ["TypeScript", "Redux", "Firebase"],
+    "technologies": ["TypeScript", "React", "Firebase", "Redux", "Tailwind", "JavaScript", "Git", "PostgreSQL"],
     "liveUrl": "https://example.com/taskmanager",
     "githubUrl": "https://github.com/example/taskmanager",
-    "featured": false
+    "featured": false,
+    "stack": "Frontend",
+    "projectDetails": "A feature-rich task management application with real-time updates, collaborative features, and persistent storage. Perfect for teams and individuals.",
+    "keyFeatures": [
+      "Create, edit, and delete tasks",
+      "Task categorization and priority levels",
+      "Real-time collaboration features",
+      "Cloud backup with Firebase",
+      "Mobile-responsive interface"
+    ]
   }
 ]

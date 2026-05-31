@@ -20,7 +20,7 @@ const Projects = async () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="projects-grid grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <div className="projects-grid grid grid-cols-1 xl:grid-cols-2 gap-8 mb-16">
           {projects.map((project, index) => (
             <ProjectCard 
               key={project.id} 
