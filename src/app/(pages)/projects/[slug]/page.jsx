@@ -60,7 +60,7 @@ const ProjectsDetails = async ({ params }) => {
                                 href={filtered.liveUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-primary/70 text-[#072a0d] dark:text-white rounded-full font-medium hover:bg-primary transition-colors group"
+                                className="inline-flex items-center gap-2 px-6 py-3 hover:bg-primary/70 text-[#072a0d] dark:text-white rounded-full font-medium bg-primary transition-colors group"
                             >
                                 View Live
                                 <FaExternalLinkAlt className="text-sm group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

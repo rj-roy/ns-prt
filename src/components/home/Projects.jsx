@@ -34,7 +34,7 @@ const Projects = async () => {
         <div className="see-all-container text-center pt-5">
           <Link 
             href="/projects" 
-            className="see-all-link inline-flex items-center gap-3 px-8 py-4 bg-transparent border-2 border-black/20 dark:border-white/20 rounded-full  font-semibold text-base hover:bg-white hover:text-black hover:border-white hover:translate-x-2 transition-all duration-300 ease-out"
+            className="see-all-link hover:shadow-2xl inline-flex items-center gap-3 px-8 py-4 bg-transparent border-2 border-black/20 dark:border-white/20 rounded-full  font-semibold text-base hover:bg-white hover:text-black hover:border-white hover:translate-x-2 transition-all duration-300 ease-out"
           >
             <span>See All Projects</span>
             <ArrowUpRight className="arrow-icon transition-transform duration-300 hover:translate-x-1 hover:-translate-y-1" size={20} />
