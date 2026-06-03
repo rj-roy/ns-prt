@@ -23,7 +23,7 @@ const AllPagesNav = () => {
         </Link>
     ));
     return (
-        <div className="border z-9999 hidden bg-[#dadbda]/80 shadow-2xl dark:bg-black/60 lg:flex w-120 h-10 p-8 rounded-full mx-auto justify-center items-center cursor-none fixed right-50 left-50 top-5 transition-all duration-700">
+        <div className=" border-b-[0.1px] border-b-primary z-9999 hidden bg-[#dadbda]/80 shadow-2xl dark:bg-black/60 lg:flex w-120 h-10 p-8 rounded-full mx-auto justify-center items-center cursor-none fixed right-50 left-50 top-5 transition-all duration-700">
             <nav className="relative flex  gap-5">
                 {renderedLinks}
             </nav>

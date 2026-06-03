@@ -66,7 +66,7 @@ const HeroSec = () => {
                 />
 
                 <motion.div
-                    className="relative max-w-5xl mx-auto z-10 text-left"
+                    className="relative max-w-5xl mx-auto  text-left"
                     variants={containerVariants}
                     initial="hidden"
                     animate={mounted ? 'visible' : 'hidden'}

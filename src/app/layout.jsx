@@ -6,7 +6,7 @@ import BackToTop from "@/components/ui/BackToTop";
 
 export const metadata = {
   title: "Rj Roy",
-  description: "Next.js Frontend Developer",
+  description: "Next.js Full-Stack Developer",
   // viewport: "width=device-width, initial-scale=1, maximum-scale=5",
 };
 

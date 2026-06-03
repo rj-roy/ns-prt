@@ -31,11 +31,11 @@ const HomeNav = () => {
     return <>
         {
             menuOpen ? (
-                <div className="border hidden bg-[#dadbda] dark:bg-black lg:grid h-120 w-10 p-8 rounded-full mx-auto place-content-center cursor-none fixed right-8 top-50 bottom-50 transition-all duration-700">
+                <div className="border-l border-l-primary hidden bg-[#dadbda] dark:bg-black lg:grid h-120 w-10 p-8 rounded-full mx-auto place-content-center cursor-none fixed right-8 top-50 bottom-50 transition-all duration-700">
                     <nav className="relative flex flex-col gap-5">
                         {renderedLinks}
                     </nav>
-                    <div onClick={()=>setMenuOpen(false)} className="z-9999 absolute top-50 bottom-50 -left-3 border-l border-l-gray-500 bg-[#F1EDEC] dark:bg-[#1F1F1F] h-7 w-5 rounded-full flex items-center justify-center cursor-pointer">
+                    <div onClick={()=>setMenuOpen(false)} className="z-9999 absolute top-50 bottom-50 -left-3 border-l border-l-primary bg-[#F1EDEC] dark:bg-[#1F1F1F] h-7 w-5 rounded-lg flex items-center justify-center cursor-pointer">
                         <FaAngleRight size={15} className=""/>
                     </div>
                 </div>
