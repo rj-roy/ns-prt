@@ -74,14 +74,14 @@ export default function TopHeroSec() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(49,229,141,0.08)_0%,transparent_70%)]" />
 
             {/* Mathematical Formulas Background */}
-            <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute inset-0 overflow-hidden opacity-50 md:opacity-100">
                 {mathFormulas.map((formula, index) => (
                     <motion.div
                         key={index}
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: 0.3 }}
+                        animate={{ opacity: 0.2 }}
                         transition={{ delay: index * 0.05, duration: 1 }}
-                        className={`absolute ${formula.size}  font-mono`}
+                        className={`absolute ${formula.size}  font-mono `}
                         style={{
                             left: formula.x,
                             top: formula.y,
@@ -239,7 +239,7 @@ export default function TopHeroSec() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.5 }}
-                    className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-10"
+                    className="text-gray-700 dark:text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-10"
                 >
                     Full Stack Developer building intelligent systems — AI Driven <br />
                     Turning research into products.
@@ -252,26 +252,28 @@ export default function TopHeroSec() {
                     transition={{ duration: 0.8, delay: 0.7 }}
                     className="flex items-center justify-center gap-4 flex-wrap"
                 >
-                    <motion.button
-                        whileHover={{ scale: 1.05, y: -2 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="px-6 py-3 rounded-lg bg-primary text-black font-semibold text-sm hover:bg-[#28d47f] transition-colors shadow-[0_0_20px_rgba(49,229,141,0.3)]"
-                    >
-                        <Link href={'#projects'}>
+                    <Link href={'#projects'}>
+                        <motion.button
+                            whileHover={{ scale: 1.05, y: -2 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="px-6 py-3 rounded-lg bg-primary text-black font-semibold text-sm hover:bg-[#28d47f] transition-colors shadow-[0_0_20px_rgba(49,229,141,0.3)]"
+                        >
                             View Projects
-                        </Link>
-                    </motion.button>
+                        </motion.button>
+                    </Link>
 
-                    <motion.button
-                        whileHover={{ scale: 1.05, y: -2 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="px-6 py-3 rounded-lg border border-primary dark:border-gray-700 text-primary dark:text-d-white font-semibold text-sm hover:border-secondery hover:text-secondery transition-colors"
-                    >
-                        <Link href={'#contact'}>
+                    <Link href={'#contact'}>
+                        <motion.button
+                            whileHover={{ scale: 1.05, y: -2 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="px-6 py-3 rounded-lg border border-primary dark:border-gray-700 text-primary dark:text-d-white font-semibold text-sm hover:border-secondery hover:text-secondery transition-colors"
+                        >
+
                             Get In Touch
-                        </Link>
-                    </motion.button>
 
+                        </motion.button>
+                    </Link>
+                    
                     <motion.a
                         href="https://github.com/rj-roy"
                         target='blank'
@@ -288,7 +290,7 @@ export default function TopHeroSec() {
                         whileTap={{ scale: 0.95 }}
                         className="p-3 rounded-lg border dark:border-gray-700 border-dark dark:text-gray-400 text-dark hover:border-secondery hover:text-secondery transition-colors"
                     >
-                        <FaLinkedin size={20}/>
+                        <FaLinkedin size={20} />
                     </motion.a>
                 </motion.div>
 

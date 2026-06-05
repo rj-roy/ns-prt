@@ -1,6 +1,6 @@
 export const getProjects = async () => {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'https://royjibononline.vercel.app/'}/api/projects`);
+        const res = await fetch(`/api/projects`);
 
         if (!res.ok) {
             throw new Error('Failed to fetch projects');

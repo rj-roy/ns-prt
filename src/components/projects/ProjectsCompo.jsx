@@ -99,7 +99,7 @@ const ProjectsCompo = () => {
                     viewport={{ once: true, amount: 0.2 }}
                     variants={containerVariants}
                 >
-                    {projects.map((project, index) => {
+                    {projects?.map((project, index) => {
                         const colorClass = colors[index % colors.length];
                         const isEven = index % 2 === 0;
 

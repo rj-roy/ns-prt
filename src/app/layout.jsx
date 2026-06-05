@@ -3,6 +3,7 @@ import { cabinet, fraunces } from "./fonts/styles/FontStyle";
 import CustomCursor from "@/components/ui/CustomCursor";
 import Provider from "@/components/Provider";
 import BackToTop from "@/components/ui/BackToTop";
+import Footer from "@/components/footer/Footer";
 
 export const metadata = {
   title: "Rj Roy",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <CustomCursor />
         <Provider>
             {children}
+            {/* <Footer /> */}
             <div>
               <BackToTop/>
             </div>
