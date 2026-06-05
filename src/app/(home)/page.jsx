@@ -1,3 +1,4 @@
+import ContactSec from "@/components/contact/ContactSec";
 import AboutSec from "@/components/home/AboutSec";
 import Projects from "@/components/home/Projects";
 import SkillsSec from "@/components/home/SkillsSec";
@@ -15,6 +16,7 @@ export default function Home() {
         <SkillsSec/>
         <AboutSec/>
         <TestimonialsSection/>
+        <ContactSec/>
       </div>
     </div>
   );

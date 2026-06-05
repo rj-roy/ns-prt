@@ -93,7 +93,7 @@ export default function SkillsSec() {
                 backgroundColor: 'rgba(255, 255, 255, 0.05)'
               }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2.5 px-4 py-2 rounded-full border border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/80 cursor-pointer transition-colors group"
+              className="flex items-center gap-2.5 px-4 py-2 rounded-full border border-gray-200 dark:border-neutral-800 bg-primary/10 dark:bg-neutral-900/80 cursor-pointer transition-colors group"
             >
               {/* Icon */}
               <div className="flex items-center justify-center w-5 h-5">

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const HomeNav = () => {
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
     const links = [
         { name: "Home", href: "#home", icon: House },
         { name: "Projects", href: "#projects", icon: GripVertical },
@@ -40,8 +40,8 @@ const HomeNav = () => {
                     </div>
                 </div>
             ): (
-                <div onClick={()=>setMenuOpen(true)} className="fixed right-0 top-100 bottom-100 bg-black/20 dark:bg-white/20 h-12 w-8 rounded-full flex items-center justify-center cursor-pointer transition-all duration-700">
-                    <FaAngleLeft size={30} className="text-primary"/>
+                <div onClick={()=>setMenuOpen(true)} className="fixed right-0 top-100 bottom-100 bg-black/20 dark:bg-dark border-primary border h-8 w-6 rounded-full flex items-center justify-center cursor-pointer transition-all duration-700">
+                    <FaAngleLeft size={25} className="text-primary"/>
                 </div>
             )
         }

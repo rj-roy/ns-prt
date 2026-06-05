@@ -74,7 +74,7 @@ const ProjectsCompo = () => {
     };
 
     return (
-        <div className="w-full">
+        <div className="w-full mt-20">
             <div className="mx-auto w-full px-6 py-6">
                 {/* Section Header */}
                 <motion.div

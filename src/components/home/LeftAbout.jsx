@@ -5,7 +5,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const LeftAbout = () => {
     return (
-        <div className="z-40 w-full lg:w-120 flex justify-center items-center lg:fixed lg:top-50 lg:bottom-50 lg:left-1 px-2 py-5">
+        <div className="z-30 w-full lg:w-120 flex justify-center items-center lg:fixed lg:top-50 lg:bottom-50 lg:left-1 px-2 py-5">
             <div className="w-full rounded-[32px] border-r border-r-primary shadow-xs shadow-primary bg-d-white dark:bg-background p-6">
                 {/* <div className="flex items-start justify-between">
                     <div className="flex items-center gap-2">
