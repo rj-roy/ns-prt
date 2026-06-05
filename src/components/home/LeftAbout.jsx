@@ -6,8 +6,8 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const LeftAbout = () => {
     return (
         <div className="z-40 w-full lg:w-120 flex justify-center items-center lg:fixed lg:top-50 lg:bottom-50 lg:left-1 px-2 py-5">
-            <div className="w-full rounded-[32px] border border-zinc-700 bg-d-white dark:bg-background p-6">
-                <div className="flex items-start justify-between">
+            <div className="w-full rounded-[32px] border-r border-r-primary shadow-xs shadow-primary bg-d-white dark:bg-background p-6">
+                {/* <div className="flex items-start justify-between">
                     <div className="flex items-center gap-2">
                         <h1 className="text-4xl font-semibold">RJ Roy</h1>
 
@@ -20,7 +20,7 @@ const LeftAbout = () => {
                         Full Stack Developer
                     </p>
 
-                </div>
+                </div> */}
 
                 <div className="mt-6 overflow-hidden rounded-[36px] flex justify-center">
                     <Image
@@ -33,17 +33,18 @@ const LeftAbout = () => {
                     />
                 </div>
 
-                <div className="mt-8 text-center">
-                    <h2 className="font-light tracking-tight">
+                <div className="mt-8 text-center space-y-2">
+                    {/* <h2 className="font-light tracking-tight">
                         dpjdeveloper.me@gmail.com
-                    </h2>
+                    </h2> */}
 
-                    <p className="mt-2 text-3xl font-light tracking-tight">
-                        Based in Dinajpur, BD
+                    <p className="mt-2 text-4xl font-bold tracking-tight">
+                        Jibon Roy (RJ)
                     </p>
 
-                    <p className="mt-8 text-zinc-400 text-sm">
-                        ©2026 Jibon Roy. All Rights Reserved
+                    <p className="">
+                        Full Stack Developer,<br/>
+                        Rangpur, BD
                     </p>
                 </div>
 
@@ -72,7 +73,7 @@ const LeftAbout = () => {
 
                 <a href="/contact"
                     className="mt-6 flex w-full items-center justify-center gap-3 rounded-full bg-primary text-black py-4 text-xl font-medium transition hover:opacity-90" >
-                    ✉ HIRE ME!
+                    Let&apos;s Talk
                 </a>
             </div>
         </div>
