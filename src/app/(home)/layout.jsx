@@ -1,3 +1,4 @@
+import Copyright from "@/components/Copyright";
 import Header from "@/components/header/NavHeader";
 import HomeNav from "@/components/header/nav/HomeNav";
 import LeftAbout from "@/components/home/LeftAbout";

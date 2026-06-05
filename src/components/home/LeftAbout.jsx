@@ -42,36 +42,43 @@ const LeftAbout = () => {
                         Jibon Roy (RJ)
                     </p>
 
-                    <p className="">
-                        Full Stack Developer,<br/>
-                        Rangpur, BD
+                    <p className="text-gray-600 dark:text-gray-400">
+                        <em>
+                            Full Stack Developer,<br />
+                            Rangpur, BD
+                        </em>
                     </p>
                 </div>
 
                 <div className="mt-6 flex items-center justify-center gap-5">
                     <Link
                         href="https://www.linkedin.com/in/roy-jibon/"
+                        target="_blank"
                         className="h-13 w-13 rounded-full border border-zinc-600 dark:text-zinc-300  transition hover:border-primary dark:hover:text-white text-black flex justify-center items-center">
                         <FaLinkedin size={30} />
                     </Link>
                     <Link
                         href="https://github.com/rj-roy"
+                        target="_blank"
                         className="h-13 w-13 rounded-full border border-zinc-600 dark:text-zinc-300  transition hover:border-primary dark:hover:text-white text-black flex justify-center items-center">
                         <FaGithub size={30} />
                     </Link>
                     <Link
                         href="https://www.instagram.com/royjibon65/"
+                        target="_blank"
                         className=" h-13 w-13 rounded-full border border-zinc-600 dark:text-zinc-300  transition hover:border-primary dark:hover:text-white text-black flex justify-center items-center">
                         <FaInstagram size={30} />
                     </Link>
                     <Link
                         href="https://x.com/JibonRo22074491"
+                        target="_blank"
                         className="h-13 w-13 rounded-full border border-zinc-600 dark:text-zinc-300  transition hover:border-primary dark:hover:text-white text-black flex justify-center items-center">
                         <FaTwitter size={30} />
                     </Link>
                 </div>
 
-                <a href="/contact"
+                <a href="https://wa.me/+8801854102982"
+                    target="_blank"
                     className="mt-6 flex w-full items-center justify-center gap-3 rounded-full bg-primary text-black py-4 text-xl font-medium transition hover:opacity-90" >
                     Let&apos;s Talk
                 </a>

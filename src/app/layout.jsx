@@ -3,12 +3,11 @@ import { cabinet, fraunces } from "./fonts/styles/FontStyle";
 import CustomCursor from "@/components/ui/CustomCursor";
 import Provider from "@/components/Provider";
 import BackToTop from "@/components/ui/BackToTop";
-import Footer from "@/components/footer/Footer";
+import Copyright from "@/components/Copyright";
 
 export const metadata = {
   title: "Rj Roy",
   description: "Next.js Full-Stack Developer",
-  // viewport: "width=device-width, initial-scale=1, maximum-scale=5",
 };
 
 export default function RootLayout({ children }) {
@@ -18,13 +17,17 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
       className={`h-full ${fraunces.variable} ${cabinet.variable}`}
     >
-      <body className="font-sans font-normal overflow-x-hidden cursor-none bg-d-white dark:bg-dark">
+      <body className="font-cabinet font-normal overflow-x-hidden cursor-none bg-d-white dark:bg-dark">
         <CustomCursor />
         <Provider>
             {children}
             <div>
               <BackToTop/>
             </div>
+
+                <div>
+                    <Copyright/>
+                </div>
         </Provider>
       </body>
     </html>

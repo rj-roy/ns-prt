@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import rj from '@/assets/images/roy-ji.png';
 import { Calendar, ExternalLink, Globe, Mail } from 'lucide-react';
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 
 
@@ -38,7 +38,7 @@ const socialLinks = [
   //   color: '#31e58d'
   // },
   {
-    id: 4,
+    id: 2,
     platform: 'LinkedIn',
     handle: 'in/roy-jibon',
     icon: FaLinkedin,
@@ -47,7 +47,7 @@ const socialLinks = [
     color: '#0077b5'
   },
   {
-    id: 5,
+    id: 3,
     platform: 'Instagram',
     handle: '@royjibon65',
     icon: FaInstagram,
@@ -56,13 +56,22 @@ const socialLinks = [
     color: '#e4405f'
   },
   {
-    id: 6,
+    id: 4,
     platform: 'Twitter',
     handle: 'JibonRo22074491',
     icon: FaTwitter,
     category: 'connect',
     href: 'https://x.com/JibonRo22074491',
     color: '#1877f2'
+  },
+  {
+    id:5,
+    platform: 'WhatsApp',
+    handle: 'Jibon Roy',
+    icon: FaWhatsapp,
+    category: 'connect',
+    href: 'https://wa.me/+8801854102982',
+    color: 'green'
   }
 ];
 
@@ -243,7 +252,7 @@ export default function ContactSec() {
                       onMouseEnter={() => setHoveredCard(link.id)}
                       onMouseLeave={() => setHoveredCard(null)}
                       whileHover={{ y: -4 }}
-                      className="group relative p-5 rounded-xl text-dark dark:bg-linear-to-b from-gray-900/60 to-black/60 border dark:border-gray-800 border-gray-400 hover:border-gray-700 transition-all overflow-hidden"
+                      className="group relative p-5 rounded-xl text-dark dark:bg-linear-to-b from-gray-900/60 to-black/60 border dark:border-gray-800 border-gray-400 hover:border-primary transition-all overflow-hidden"
                     >
                       {/* Hover Gradient */}
                       <div
@@ -312,7 +321,7 @@ export default function ContactSec() {
                       onMouseEnter={() => setHoveredCard(link.id)}
                       onMouseLeave={() => setHoveredCard(null)}
                       whileHover={{ y: -4 }}
-                      className="group relative p-5 rounded-xl text-dark dark:bg-linear-to-b from-gray-900/60 to-black/60 border dark:border-gray-800 border-gray-400 hover:border-gray-700 transition-all overflow-hidden"
+                      className="group relative p-5 rounded-xl text-dark dark:bg-linear-to-b from-gray-900/60 to-black/60 border dark:border-gray-800 border-gray-400 hover:border-secondery transition-all overflow-hidden"
                     >
                       {/* Hover Gradient */}
                       <div

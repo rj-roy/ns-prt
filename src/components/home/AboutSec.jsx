@@ -5,18 +5,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function AboutSec() {
     return (
-        <section className="min-h-screen w-full mx-auto max-w-6xl grid py-16 px-6 sm:px-12 lg:px-20 place-items-center overflow-hidden">
-            {/* Subtle background grid pattern */}
-            {/* <div
-        className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '60px 60px',
-        }}
-      /> */}
+        <section id='about' className="min-h-screen w-full mx-auto max-w-6xl grid py-16 px-6 sm:px-12 lg:px-20 place-items-center overflow-hidden">
             <div>
                 <motion.button
                     initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,4 @@
 import ContactSec from "@/components/contact/ContactSec";
-import Copyright from "@/components/Copyright";
 import AboutSec from "@/components/home/AboutSec";
 import Projects from "@/components/home/Projects";
 import SkillsSec from "@/components/home/SkillsSec";
@@ -16,7 +15,6 @@ export default function Home() {
         <AboutSec/>
         <TestimonialsSection/>
         <ContactSec/>
-        <Copyright/>
       </div>
     </div>
   );

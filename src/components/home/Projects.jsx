@@ -13,10 +13,15 @@ const Projects = async () => {
 
         {/* Section Header */}
         <div className="projects-header mb-16">
-          <h2 className="projects-title text-[clamp(3rem,8vw,6rem)] font-extrabold leading-none tracking-tight">
-            <span className="title-main block text-black dark:text-white">RECENT</span>
-            <span className="title-secondary block text-black/30 dark:text-white/30 mt-2">PROJECTS</span>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight">
+            <span className="text-gray-900 dark:text-white font-sans">Selected</span>
+            <span className="text-primary italic font-serif ml-2 font-normal">
+              Work
+            </span>
           </h2>
+          <p className="text-[10px] sm:text-xs tracking-[0.3em] uppercase text-gray-500 dark:text-gray-500 font-medium">
+            Systems designed to handle users, data, and complexity.
+          </p>
         </div>
 
         {/* Projects Grid */}

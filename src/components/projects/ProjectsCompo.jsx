@@ -16,7 +16,6 @@ const ProjectsCompo = () => {
         const fetchProjects = async () => {
             try {
                 const data = await getProjects();
-                console.log(data);
                 setProjects(data);
             } catch (error) {
                 console.error('Error fetching projects:', error);
@@ -74,7 +73,7 @@ const ProjectsCompo = () => {
     };
 
     return (
-        <div className="w-full mt-20">
+        <div className="w-full mt-15">
             <div className="mx-auto w-full px-6 py-6">
                 {/* Section Header */}
                 <motion.div

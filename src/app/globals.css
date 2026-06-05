@@ -19,12 +19,14 @@ body {
   box-sizing: border-box;
 }
 
-@theme{
+@theme {
   --color-primary: #31e58d;
   --color-secondery: #ff3c00;
   --color-dark: #1f1f1f;
   --color-black: #1b1b1f;
   --color-d-white: #eef0ee;
+  --font-fraunces: var(--font-fraunces);
+  --font-cabinet: var(--font-cabinet);
 }
 
 :root {
@@ -47,3 +49,47 @@ html:not(.hide-sidebar) aside {
   @apply lg:w-130 lg:opacity-100;
   transition: all 0.4s ease-out;
 }
+
+
+/* matrix loader start */
+.matrix-loader {
+  width: 44.8px;
+  height: 44.8px;
+  color: #ff3c00;
+  position: relative;
+  background: radial-gradient(11.2px, currentColor 94%, transparent);
+}
+
+.matrix-loader::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background:
+    radial-gradient(10.08px at bottom right, transparent 94%, currentColor) top left,
+    radial-gradient(10.08px at bottom left, transparent 94%, currentColor) top right,
+    radial-gradient(10.08px at top right, transparent 94%, currentColor) bottom left,
+    radial-gradient(10.08px at top left, transparent 94%, currentColor) bottom right;
+  background-size: 22.4px 22.4px;
+  background-repeat: no-repeat;
+  animation: matrix-loader 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+
+@keyframes matrix-loader {
+  33% {
+    inset: -11.2px;
+    transform: rotate(0deg);
+  }
+
+  66% {
+    inset: -11.2px;
+    transform: rotate(90deg);
+  }
+
+  100% {
+    inset: 0;
+    transform: rotate(90deg);
+  }
+}
+
+/* matrix loader end */
