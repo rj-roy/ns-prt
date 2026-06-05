@@ -1,6 +1,9 @@
 export const getProjects = async () => {
     try {
-        const res = await fetch(`/api/projects`);
+        const isClient = typeof window !== 'undefined';
+        const url = isClient ? '/api/projects' : 'https://www.royjibon.online/api/projects';
+        
+        const res = await fetch(url);
 
         if (!res.ok) {
             throw new Error('Failed to fetch projects');

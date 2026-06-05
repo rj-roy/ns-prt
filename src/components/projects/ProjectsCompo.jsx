@@ -16,6 +16,7 @@ const ProjectsCompo = () => {
         const fetchProjects = async () => {
             try {
                 const data = await getProjects();
+                console.log(data);
                 setProjects(data);
             } catch (error) {
                 console.error('Error fetching projects:', error);
