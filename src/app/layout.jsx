@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
         <CustomCursor />
         <Provider>
             {children}
-            {/* <Footer /> */}
             <div>
               <BackToTop/>
             </div>

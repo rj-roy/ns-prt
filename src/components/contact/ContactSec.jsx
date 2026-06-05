@@ -12,10 +12,10 @@ const socialLinks = [
   {
     id: 1,
     platform: 'GitHub',
-    handle: '@softrenj',
+    handle: '@rj-roy',
     icon: FaGithub,
     category: 'code',
-    href: '#',
+    href: 'https://github.com/rj-roy',
     color: '#31e58d'
   },
   // {
@@ -40,28 +40,28 @@ const socialLinks = [
   {
     id: 4,
     platform: 'LinkedIn',
-    handle: 'in/rajsharma',
+    handle: 'in/roy-jibon',
     icon: FaLinkedin,
     category: 'connect',
-    href: '#',
+    href: 'https://www.linkedin.com/in/roy-jibon/',
     color: '#0077b5'
   },
   {
     id: 5,
     platform: 'Instagram',
-    handle: '@rajsharma',
+    handle: '@royjibon65',
     icon: FaInstagram,
     category: 'connect',
-    href: '#',
+    href: 'https://www.instagram.com/royjibon65/',
     color: '#e4405f'
   },
   {
     id: 6,
     platform: 'Twitter',
-    handle: 'Raj Sharma',
+    handle: 'JibonRo22074491',
     icon: FaTwitter,
     category: 'connect',
-    href: '#',
+    href: 'https://x.com/JibonRo22074491',
     color: '#1877f2'
   }
 ];
@@ -95,7 +95,7 @@ export default function ContactSec() {
   const connectLinks = socialLinks.filter(link => link.category === 'connect');
 
   return (
-    <section id='contact' className="relative min-h-screen py-20 px-4 sm:px-8 lg:px-16 overflow-hidden">
+    <section id='contact' className="relative min-h-[90dvh] py-20 px-4 sm:px-8 lg:px-16 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0" style={{
@@ -304,6 +304,7 @@ export default function ContactSec() {
                     <motion.a
                       key={link.id}
                       href={link.href}
+                      target='blank'
                       variants={cardVariants}
                       initial="hidden"
                       animate="visible"

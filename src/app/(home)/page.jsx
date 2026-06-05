@@ -1,4 +1,5 @@
 import ContactSec from "@/components/contact/ContactSec";
+import Copyright from "@/components/Copyright";
 import AboutSec from "@/components/home/AboutSec";
 import Projects from "@/components/home/Projects";
 import SkillsSec from "@/components/home/SkillsSec";
@@ -10,13 +11,12 @@ export default function Home() {
     <div className="w-full overflow-x-hidden">
       <div className="w-full">
         <TopHeroSec/>
-        {/* <HeroSec /> */}
         <Projects />
-        {/* <ExperienceSection/> */}
         <SkillsSec/>
         <AboutSec/>
         <TestimonialsSection/>
         <ContactSec/>
+        <Copyright/>
       </div>
     </div>
   );
