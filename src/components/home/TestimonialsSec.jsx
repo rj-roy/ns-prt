@@ -365,7 +365,7 @@ export default function TestimonialsSection() {
                         <div className="text-sm text-gray-500 dark:text-gray-400">Projects Delivered</div>
                     </div>
                     <div className="text-center">
-                        <div className="text-3xl sm:text-4xl font-bold text-white dark:text-gray-200 mb-2">100%</div>
+                        <div className="text-3xl sm:text-4xl font-bold text-dark dark:text-gray-200 mb-2">100%</div>
                         <div className="text-sm text-gray-500 dark:text-gray-400">Satisfaction Rate</div>
                     </div>
                 </motion.div>

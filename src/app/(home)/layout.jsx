@@ -9,7 +9,7 @@ export default function HomeLayout({ children }) {
             <div className="relative w-full min-h-screen">
                 <Header />
                 <div className="flex flex-col lg:flex-row w-full">
-                    <aside className="w-full lg:w-130 lg:h-screen lg:top-0 lg-aside-transition">
+                    <aside className="w-full hidden lg:block lg:w-130 lg:h-screen lg:top-0 lg-aside-transition">
                         <LeftAbout />
                     </aside>
                     
