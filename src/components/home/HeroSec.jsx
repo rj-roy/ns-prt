@@ -14,7 +14,7 @@ const HeroSec = () => {
     }, []);
 
     const stats = [
-        { value: '+12', label: 'Years of Experience' },
+        { value: '+5', label: 'Years of Experience' },
         { value: '+46', label: 'Projects Completed' },
         { value: '+20', label: 'Worldwide Clients' },
     ];

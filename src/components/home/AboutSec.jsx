@@ -5,7 +5,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function AboutSec() {
     return (
-        <section className="min-h-screen grid py-16 px-6 sm:px-12 lg:px-20 place-items-center overflow-hidden">
+        <section className="min-h-screen w-full mx-auto max-w-6xl grid py-16 px-6 sm:px-12 lg:px-20 place-items-center overflow-hidden">
             {/* Subtle background grid pattern */}
             {/* <div
         className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
