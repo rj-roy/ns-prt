@@ -13,7 +13,7 @@ const HomeNav = () => {
         { name: "Skills", href: "#skills", icon: Shapes },
         { name: "Services", href: "#services", icon: GanttChart },
         { name: "Testimonials", href: "#testimonials", icon: MessageSquareText },
-        { name: "Resume", href: "#resume", icon: Briefcase },
+        { name: "Resume", href: "/resume", icon: Briefcase },
         { name: "Contact", href: "#contact", icon: Mail },
     ];
 

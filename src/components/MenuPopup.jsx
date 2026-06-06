@@ -8,14 +8,14 @@ const MenuPopup = ({ isOpen, onClose }) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredPages, setFilteredPages] = useState([]);
     const pinnedPages = [
-        { name: 'Projects', icon: Layers, description: 'View my work', href: '#projects' }
+        { name: 'Projects', icon: Layers, description: 'View my work', href: '/projects' }
     ];
     const pages = [
         { name: 'Home', icon: Home, description: 'Overview & entry point', href: '/' },
         { name: 'About', icon: User, description: 'Who I am & what I do', href: '/#about' },
         { name: 'Book a Call', icon: MessageSquare, description: 'Schedule a quick chat', href: '/#contact' },
         { name: 'Contact', icon: Mail, description: 'Reach out directly', href: '/#contact' },
-        { name: 'Experience', icon: Briefcase, description: 'Work & internships', href: '/#resume' },
+        { name: 'Resume', icon: Briefcase, description: 'Work & internships', href: '/resume' },
         { name: 'Skills', icon: Zap, description: 'Technologies & expertise', href: '/#skills' },
         { name: 'Projects', icon: Code, description: 'Portfolio projects', href: '/projects' },
         { name: 'Services', icon: Layers, description: 'What I offer', href: '/#services' },

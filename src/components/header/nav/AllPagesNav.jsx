@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const AllPagesNav = () => {
     const links = [
-        { name: "Home", href: "/#home", icon: House },
+        { name: "Home", href: "/", icon: House },
         { name: "Projects", href: "/projects", icon: GripVertical },
         { name: "About", href: "/#about", icon: User },
         { name: "Skills", href: "/#skills", icon: Shapes },
         { name: "Services", href: "/#services", icon: GanttChart },
         { name: "Testimonials", href: "/#testimonials", icon: MessageSquareText },
-        { name: "Resume", href: "/#resume", icon: Briefcase },
+        { name: "Resume", href: "/resume", icon: Briefcase },
         { name: "Contact", href: "/#contact", icon: Mail },
     ];
 
